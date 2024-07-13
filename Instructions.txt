@@ -1,0 +1,58 @@
+("The commands will only in the windows powershell terminal alter it according to your platform")
+firstly create the virtual environment, "Ensure that you have install Python "
+use command :python -m venv venv
+Activate the virtual environment
+use command :venv\Scripts\activate
+
+Then is to install the necessary libraries which is presented in the requirements.txt file
+use command :pip install -r requirements. txt
+
+Then Download the Open Neural Network Exchange file for background remove 
+Manually Download the Model:
+Download the u2net.onnx model file from the GitHub repository: u2net.onnx.
+
+then create a new directory in the rembg package directory
+firstly move to the directory by 
+using command : cd venv/lib/python3.x/site-packages/rembg/
+
+create directory if not exits 
+use command :mkdir models
+
+then come out from the Integrated Development Environment and the copy the u2net.onnx file where you have downloaded 
+Then open the project folder background_removal_app
+then go to venv - lib - python3.something - site-packages - rembg - models - here you want to paste the u2net.onnx file you have downloaded
+
+Then your directory structure will be like this 
+background_removal_app/
+├── app.py
+├── templates/
+│   └── index.html
+├── static/
+│   └── style.css
+├── venv/
+│   ├── lib/
+│   │   └── python3.x/
+│   │       └── site-packages/
+│   │           └── rembg/
+│   │               └── models/
+│   │                   └── u2net.onnx
+│   └── ...
+
+then get out from the venv 
+using command : cd .. utill you have come out from the venv
+
+then use the command : python BG_remover.py to run your app
+and the output willbe somewhat like this 
+ * Serving Flask app 'BG_remover'                                                                                                                
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 901-098-096
+127.0.0.1 - - [13/Jul/2024 22:02:13] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Jul/2024 22:02:13] "GET /static/example.webp HTTP/1.1" 304 -
+
+copy the http://127.0.0.1:5000 copy the localhost and paste it on any server (google chrome)
+And your app will work 
