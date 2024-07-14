@@ -24,3 +24,5 @@ I’m looking forward to enhancing the app further, adding more features, and po
 Thank you for your support and stay tuned for more updates! 😊
 
 #Flask #Python #WebDevelopment #ImageProcessing #MachineLearning #AI #BackgroundRemoval #TechInnovation
+
+There is a Instructions text file is present refer the file to run the project
