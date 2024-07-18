@@ -1,4 +1,4 @@
-("The commands will only in the windows powershell terminal alter it according to your platform")
+("The commands will edit only in the windows powershell terminal alter it according to your platform")
 firstly create the virtual environment, "Ensure that you have install Python "
 use command :python -m venv venv
 Activate the virtual environment
